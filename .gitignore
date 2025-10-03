@@ -1,0 +1,209 @@
+# .gitignore for Bookstore AI System
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.virtualenv/
+bookstor_ai_system/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+chroma_db/
+*.chroma
+
+# Vector Store Data
+data/embeddings/*.npy
+data/embeddings/*.pkl
+data/vector_db/
+chroma/
+
+# Data Files (keep structure, ignore content)
+data/raw/*.json
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.xls
+data/processed/*.json
+data/processed/*.csv
+data/processed/*.pkl
+
+# Keep data directory structure
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/embeddings/.gitkeep
+
+# Logs
+logs/
+*.log
+log/
+*.log.*
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+.cache
+
+# Type Checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Documentation
+docs/_build/
+site/
+
+# Temporary Files
+*.tmp
+*.temp
+tmp/
+temp/
+*.bak
+*.swp
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ChromaDB specific
+chroma_data/
+*.chroma
+persist/
+
+# Model Files (if you download models locally)
+models/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+sentence-transformers/
+
+# API Keys and Secrets
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# Large Files
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Backup Files
+*.backup
+backup/
+backups/
+
+# Cache
+.cache/
+*.cache
+__cache__/
+
+# Redis
+dump.rdb
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Profiling
+*.prof
+*.lprof
+
+# Project Specific
+# Sample data (keep small examples, ignore large datasets)
+data/raw/bookstore_a_sample.json
+data/raw/bookstore_b_sample.json
+data/raw/*_large.json
+data/raw/*_full.csv
+
+# Generated files from demos
+demo_output/
+test_output/
+
+# Benchmark results
+benchmarks/
+performance_logs/
+
+# Keep important structure files
+!.gitkeep
+!README.md
+!requirements.txt
+!setup.py
+!pyproject.toml
